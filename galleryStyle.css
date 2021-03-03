@@ -1,0 +1,95 @@
+/*Generals*/
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+#content_empresa_servicios {
+  width: 100%;
+  background-color: red;
+  display: flex;
+}
+
+.equal_services {
+  position: relative;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  max-width: 20%;
+  overflow: hidden;
+}
+
+.equal_services h1 {
+    position: absolute;
+    font-family: Oswald,sans-serif;
+    font-weight: normal;
+    font-size: 1.56em;
+    line-height: 1.45;
+    letter-spacing: .07em;
+    color: #fff;
+    text-transform: uppercase;
+    z-index: 999;
+}
+
+/*Title*/
+.equal_services .title_services {
+    top: 0;    
+    left: 20px;
+    opacity: 1;
+   -webkit-transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+    -o-transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+    transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+}
+
+.equal_services:hover .title_services {
+    top: 100px;
+    opacity: 0;
+    -webkit-transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+    -o-transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+    transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+ }
+
+/*Subtitle*/
+h1.subtitle_services{
+  bottom: 60px;
+  left: 0;
+  opacity: 1;
+  letter-spacing: 3px;
+  transform: rotate(-90deg), ;
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg);
+  -webkit-transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+  -o-transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+  transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+}
+
+.equal_services:hover h1.subtitle_services{
+  bottom: 90px;
+  left: -30px;
+  opacity: 0;
+  letter-spacing: 10px;
+  -webkit-transform: rotate(-90deg); 
+  -moz-transform: rotate(-90deg);	
+  -webkit-transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+  -o-transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+  transition: all .6s cubic-bezier(.17,.67,.4,.93) .01s;
+}
+
+/*BG Img*/
+.equal_services img {
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: .5;
+  -webkit-transition: all 5s cubic-bezier(.17,.67,.4,.93) .01s;
+  -o-transition: all 5s cubic-bezier(.17,.67,.4,.93) .01s;
+  transition: all 5s cubic-bezier(.17,.67,.4,.93) .01s;
+}
+
+.equal_services:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 1;
+  -webkit-transition: all 5s cubic-bezier(.17,.67,.4,.93) .01s;
+  -o-transition: all 5s cubic-bezier(.17,.67,.4,.93) .01s;
+  transition: all 5s cubic-bezier(.17,.67,.4,.93) .01s;
+}
